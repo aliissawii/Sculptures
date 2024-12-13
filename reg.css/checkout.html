@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Check out</title>
+<link rel="stylesheet" href="checkout.css"> 
+<style>
+     @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+<div class="nav-bar">
+    <header>
+        <nav>
+            <div class="logonav"><a href="Scul.html"><img src="sculinfo.png" alt="" width="200px"></a></div>
+
+           <ul class="navinfo">
+            <div class="iconsnav">
+              <a href="contact.html"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
+            <a href="cart.HTML"><li> <i class="fa-solid fa-cart-shopping"></i></li></a>
+            </div>
+            <a href="Scul.html"><li>Home</li></a>
+            <a href="reg.html"><li>Register</li></a>
+            <a href="shop.html"><li>Shop</li></a>
+            <a href="About.html"><li>About</li></a>
+            <a href="contact.html"><li>Contact us</li></a>
+            
+
+           </ul>
+        </nav>
+    </header>
+
+
+<main>
+    <div class="main">
+        <form class="row g-3">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Username</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">State</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-md-6">
+                <label for="paymentMethod" class="form-label">Payment Method</label>
+                <select class="form-select" id="paymentMethod" required onchange="toggleVisaDetails()">
+                    <option selected disabled value="">Choose...</option>
+                    <option value="COD">Cash on Delivery (COD)</option>
+                    <option value="Visa">Visa</option>
+                </select>
+            </div>
+            <div class="col-md-6" id="visaDetails" style="display: none;">
+                <label for="visaNumber" class="form-label">Visa Card Number</label>
+                <input type="text" class="form-control" id="visaNumber" placeholder="Enter Visa Card Number">
+                <label for="visaExpiry" class="form-label">Expiry Date</label>
+                <input type="month" class="form-control" id="visaExpiry">
+                <label for="visaCvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="visaCvv" placeholder="Enter CVV">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit Order</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+
+
+    <div class="footer">
+        <footer>
+
+        <div class="igi">
+                <a href="https://www.instagram.com/sculptureswear/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sculptures.wear"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+            <p>&copy; 2024 Sculptures Wear. All Rights Reserved.</p>
+        </footer>
+    </div>  
+     
+</body>
+</html>
+

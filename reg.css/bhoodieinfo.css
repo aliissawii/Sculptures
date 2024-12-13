@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    background-color: rgb(234, 234, 234);
+    padding: 10px 10px;
+ 
+ }
+ 
+ .logonav{
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin: -70px 20px 10px;
+ 
+     
+ }
+ 
+ .navinfo{
+     display: flex;
+     flex-direction: row;
+     gap: 7px;
+     justify-content: flex-end;
+     margin: -130px 25px 20px 50px;
+ 
+ }
+ 
+ 
+ .navinfo a{
+     font-family: 'SF Pro Display', sans-serif;
+     color: black;
+     list-style: none;
+     text-decoration: none;
+ 
+ }
+ 
+ 
+
+ .iconsnav{
+    display: flex;
+    gap: 10px;
+    padding: 0px 10px;
+ }
+ 
+ 
+ .navinfo a:hover{
+     color: rgb(114, 114, 114);
+ 
+ }
+
+
+
+
+
+.navicons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    gap: 20px;
+    position: relative;
+    bottom: 37px;   
+}
+
+
+.navicons :hover{
+    color: #9a9a9a;
+}
+
+
+
+.two-hoodies{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+table tr td{
+    text-align: center;
+    padding: 10px;
+}
+
+
+.sizechart{
+
+    margin: 10px 400px;
+    font-family: 'SF Pro Display', sans-serif;
+    padding: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.disc1{
+    display: flex;
+    justify-content: center;
+    font-family: 'SF Pro Display', sans-serif;
+    text-align: center;
+    width: 700px;
+    margin: 50px 400px;
+}
+
+
+
+.sizepic{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.h3{
+    padding: 30px;
+}
+
+
+.cob{
+    display: flex;
+    justify-content: center;
+    margin:  0px 0px 50px 0px;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(234, 234, 234);
+    color: #101010;
+}
+
+.igi{
+    display: flex;
+    gap: 17px;
+   justify-content: center;
+   margin: 20px;
+   padding: 10px;
+   font-size: 25px;
+  
+}
+
+.igi a:hover{
+    color: blue;
+}

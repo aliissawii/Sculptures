@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Section</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: 'brigends expanded', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .upload-section {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .upload-section p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .upload-button {
+            margin-bottom: 15px;
+        }
+
+        .custom-file-upload {
+            display: inline-block;
+            padding: 8px 12px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .custom-file-upload span {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        #file-upload {
+            display: none;
+        }
+
+        .view-folder {
+            text-decoration: none;
+            color: #4a90e2;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .view-folder::before {
+            content: url(https://drive.google.com/drive/u/0/folders/1weR4fGSlDUVj9Vy7_xs9qjRCNZ2O65xM);
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-section">
+        <p>Upload work, backups</p>
+        <div class="upload-button">
+            <label for="file-upload" class="custom-file-upload">
+                <span>&#8682;</span> Add file
+            </label>
+            <input id="file-upload" type="file" />
+        </div>
+        <a href="#" class="view-folder">View folder</a>
+    </div>
+</body>
+</html>

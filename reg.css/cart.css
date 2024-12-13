@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d0d0d0;
+}
+
+
+.nav-bar{
+    background-color: rgb(234, 234, 234);
+    padding: 10px 10px;
+ 
+ }
+ 
+ .logonav{
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     margin: -70px 20px 10px;
+ 
+     
+ }
+ 
+ .navinfo{
+     display: flex;
+     flex-direction: row;
+     gap: 7px;
+     justify-content: flex-end;
+     margin: -130px 25px 20px 50px;
+ 
+ }
+ 
+ 
+ .navinfo a{
+     font-family: 'SF Pro Display', sans-serif;
+     color: black;
+     list-style: none;
+     text-decoration: none;
+ 
+ }
+ 
+ .navinfo a:hover{
+     color: rgb(114, 114, 114);
+ 
+ }
+
+ .iconsnav{
+    display: flex;
+    gap: 10px;
+    padding: 0px 10px;
+ }
+ 
+
+
+.yc{
+    margin: 30px;
+}
+
+.accordion-body{
+    display: flex;
+    align-items: center;
+}
+
+
+.trash{
+    margin-left: 1200px;
+    font-size: larger;
+
+}
+
+.trash :hover{
+    color: rgb(160, 160, 160);
+}
+
+
+.checkoutbut{
+    margin: 50px;
+}
+
+
+
+
+.footer1 {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(234, 234, 234);
+    color: #101010;
+}
+
+.igi{
+    display: flex;
+    gap: 17px;
+   justify-content: center;
+   margin: 20px;
+   padding: 10px;
+   font-size: 25px;
+  
+}
+
+.igi a:hover{
+    color: blue;
+}
+
+
+
+
+
+
+

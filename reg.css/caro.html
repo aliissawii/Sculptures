@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: 'brigends expanded', sans-serif; margin: 0; padding: 0; }
+    .chat-container { width: 300px; margin: 20px auto; border: 4px solid blue; padding: 10px; background-color: rgb(254, 133, 5);}
+    .messages { height: 200px; overflow-y: auto; border: 1px solid blue; padding: 10px; margin-bottom: 10px; }
+    .message { padding: 5px; border-bottom: 1px solid blue; }
+    .message:last-child { border-bottom: none; }
+    .message-user { font-weight: bold; }
+    input[type="text"], button { width: 100%; padding: 8px; margin: 5px 0; color: blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="messages" id="messages"></div>
+    <input type="text" id="username" placeholder="Enter your name">
+    <input type="text" id="chatMessage" placeholder="Type your message">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    const apiUrl = 'https://script.google.com/macros/s/AKfycbzFrsSONneDR31n5ljvK35U4nSciNajWFZLnvU1eso/dev';  // Replace with your deployed script URL
+
+    async function loadMessages() {
+      const response = await fetch(apiUrl + '?action=getMessages');
+      const messages = await response.json();
+      const messagesContainer = document.getElementById('messages');
+      messagesContainer.innerHTML = '';  // Clear previous messages
+
+      messages.forEach(msg => {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message');
+        messageDiv.innerHTML = `<div class="message-user">${msg[1]}</div><div>${msg[2]}</div>`;
+        messagesContainer.appendChild(messageDiv);
+      });
+    }
+
+    async function sendMessage() {
+      const user = document.getElementById('username').value;
+      const message = document.getElementById('chatMessage').value;
+
+      if (!user || !message) return alert("Please enter your name and message.");
+
+      await fetch(apiUrl, {
+        method: 'POST',
+        body: JSON.stringify({ user, message }),
+        headers: { 'Content-Type': 'application/json' }
+      });
+
+      document.getElementById('chatMessage').value = '';
+      loadMessages();  // Refresh messages after sending
+    }
+
+    // Load messages every 5 seconds
+    setInterval(loadMessages, 5000);
+    loadMessages();  // Initial load
+  </script>
+</body>
+</html>

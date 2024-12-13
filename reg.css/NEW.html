@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="E:\UNI\s3\Ecomm\Section\brigendsexpanded-nrek1.otf" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'brigends expanded', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: white; /* White background for the form */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center text inside the form */
+            width: 300px; /* Fixed width for form */
+            max-width: 100%; /* Responsive max width */
+        }
+
+        form {
+            color: blue; /* Text color */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 22px); /* Full width minus padding */
+            padding: 10px;
+            margin: 8px 0; /* Vertical spacing between inputs */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 4px; /* Rounded corners */
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: blue; /* Button background color */
+            color: white; /* Button text color */
+            padding: 10px 20px;
+            border: none; /* Remove border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            width: 48%; /* Buttons side by side */
+            margin: 5px 1%; /* Margin between buttons */
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: darkblue; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <label for="username">username:</label><br>
+            <input type="text" id="user_name" name="user_name"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" required placeholder="kelmet elser" name="password" minlength="6"><br><br>
+            <input type="submit" name="submit" value="Apply"> 
+            <input type="reset" name="reset" value="Reset"><br>
+        </form>
+    </div>
+</body>
+</html>

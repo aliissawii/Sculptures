@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.toplogo{
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+
+}
+
+
+.forms{
+     font-family: 'SF Pro Display', sans-serif;
+    margin: 50px;
+}
+
+.buttons{
+    font-family: 'SF Pro Display', sans-serif;
+    gap: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+}
